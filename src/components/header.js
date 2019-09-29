@@ -1,34 +1,22 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import logo from "../images/logo-139x36.png"
+import "./header.scss"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `coral`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  // <header>
+  <div className="navbar is-dark is-spaced is-fixed-top">
+    <div className="container">
+      <div className="navbar-brand">
+        <a href="" className="navbar-item">
+          <img src={logo} alt="klakson logo" />
+        </a>
+      </div>
+      <div className="navbar-menu"></div>
     </div>
-  </header>
+  </div>
+  //</header>
 )
 
 Header.propTypes = {
