@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `ТЕХЦЕНТР КЛАКСОН`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Лучший автомобильный сервис в гооде Пыть-Ях и Нефтеюганском районе.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
