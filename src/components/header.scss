@@ -1,12 +1,21 @@
 header {
-  height: 70px;
+  height: 60px;
   display: flex;
   position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    #1a1919f1 60%,
+    rgba(8, 8, 8, 0.096)
+  ); // rgba(0, 0, 0, 0.651);
   //align-items: center;
   nav {
     display: flex;
     justify-content: space-around;
     height: 100%;
+    width: 100%;
 
     .logo {
       padding: 10px;
@@ -23,10 +32,16 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        .link-menu {
-          padding-bottom: 5px;
+
+        a {
+          color: #999;
+          text-decoration: none;
+          padding: 6px 5px;
+          //box-sizing: border-box;
+          border-bottom: 3px solid transparent;
+
           &:hover {
-            border-bottom: 3px solid #000;
+            border-bottom: 3px solid rgb(107, 106, 106);
           }
         }
       }
