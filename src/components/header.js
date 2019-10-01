@@ -1,22 +1,39 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/logo-139x36.png"
+import logo from "../images/logo-303x70.png"
 import "./header.scss"
 
 const Header = ({ siteTitle }) => (
-  // <header>
-  <div className="navbar is-dark is-spaced is-fixed-top">
-    <div className="container">
-      <div className="navbar-brand">
-        <a href="" className="navbar-item">
-          <img src={logo} alt="klakson logo" />
-        </a>
-      </div>
-      <div className="navbar-menu"></div>
-    </div>
-  </div>
-  //</header>
+  <header>
+    <nav>
+      <a href="" className="logo">
+        <img src={logo} alt="klakson logo" />
+      </a>
+      <ul className="menu">
+        <li className="m-item">
+          <Link className="link-menu" to="/">
+            Главная
+          </Link>
+        </li>
+        <li className="m-item">
+          <Link className="link-menu" to="/">
+            Сервисы
+          </Link>
+        </li>
+        <li className="m-item">
+          <Link className="link-menu" to="/">
+            Цены
+          </Link>
+        </li>
+        <li className="m-item">
+          <Link className="link-menu" to="/contacts">
+            Контакты
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  </header>
 )
 
 Header.propTypes = {

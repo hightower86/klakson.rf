@@ -1,11 +1,35 @@
-.navbar {
-  background-color: rgba(0, 0, 0, 0.5);
-  .navbar-item {
-    img {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
+header {
+  height: 70px;
+  display: flex;
+  position: fixed;
+  //align-items: center;
+  nav {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+
+    .logo {
+      padding: 10px;
+      img {
+        height: 40px;
+        margin: 0;
+      }
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: (repeat(4, 1fr));
+      width: 50%;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .link-menu {
+          padding-bottom: 5px;
+          &:hover {
+            border-bottom: 3px solid #000;
+          }
+        }
+      }
     }
   }
 }
