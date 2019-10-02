@@ -11,12 +11,12 @@ const IndexPage = () => (
     <SEO title="Home" />
     <section className="main-page">
       <div className="container">
-        <h1 className="">
+        <h1 className="title">
           СТО "КЛАКСОН" <br /> Пыть-Ях
         </h1>
-        <h2 className="">Добро пожаловать на сайт нашего техцентра</h2>
-        <h3 className="">Ваш автомобиль будет в надежных руках</h3>
-        <button className="button i-button">ЗАПИСЬ НА РЕМОНТ</button>
+        <h2 className="subtitle">Добро пожаловать в наш технический центр</h2>
+        <h3 className="subtitle">Ваш автомобиль будет в надежных руках</h3>
+        <button className="button i-button">ДИАГНОСТИКА</button>
       </div>
     </section>
 

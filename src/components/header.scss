@@ -34,14 +34,17 @@ header {
         align-items: center;
 
         a {
-          color: #999;
+          color: rgb(153, 153, 153);
           text-decoration: none;
           padding: 6px 5px;
-          //box-sizing: border-box;
-          border-bottom: 3px solid transparent;
+          letter-spacing: 0.1rem;
+          text-transform: uppercase;
+          border-bottom: 2px solid transparent;
+          transition: all 0.5s ease;
 
           &:hover {
-            border-bottom: 3px solid rgb(107, 106, 106);
+            border-bottom: 2px solid rgb(231, 225, 139);
+            color: rgb(231, 225, 139);
           }
         }
       }

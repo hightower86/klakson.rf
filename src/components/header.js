@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
         </li>
         <li className="m-item">
           <Link className="link-menu" to="/">
-            Сервисы
+            Услуги
           </Link>
         </li>
         <li className="m-item">
