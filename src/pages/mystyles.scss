@@ -31,6 +31,17 @@
   justify-content: center;
   align-items: center;
 }
+.contacts-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/bg-contacts-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .section-next {
   height: 100vh;
   background-color: rgb(87, 86, 86);
@@ -60,12 +71,14 @@
 }
 .i-button {
   margin-top: 1.5rem;
+  padding: 8px 10px;
   font-size: 0.8em;
   height: 35px;
   width: 150px;
   background-color: rgb(150, 0, 0);
   color: rgb(184, 184, 184);
   border: none;
+  text-decoration: none;
   &:hover {
     background-color: rgb(199, 44, 23);
     font-size: 0.9em;

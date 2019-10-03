@@ -16,7 +16,9 @@ const IndexPage = () => (
         </h1>
         <h2 className="subtitle">Добро пожаловать в наш технический центр</h2>
         <h3 className="subtitle">Ваш автомобиль будет в надежных руках</h3>
-        <button className="button i-button">ЗАПИСАТЬСЯ</button>
+        <Link to="/contacts" className="button i-button">
+          ЗАПИСАТЬСЯ
+        </Link>
       </div>
     </section>
 

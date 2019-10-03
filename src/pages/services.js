@@ -6,7 +6,10 @@ const Services = () => {
     <Layout>
       <section className="service-page">
         <div className="container">
-          <h2 className="title">Services</h2>
+          <h2 className="title">Услуги СТО</h2>
+          <h3 className="subtitle">Ремонт двигателей</h3>
+          <h3 className="subtitle">Ремонт подвески</h3>
+          <h3 className="subtitle">Ремонт тормозной системы</h3>
         </div>
       </section>
       <section className="section-next">
