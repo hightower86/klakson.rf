@@ -16,15 +16,13 @@ const IndexPage = () => (
         </h1>
         <h2 className="subtitle">Добро пожаловать в наш технический центр</h2>
         <h3 className="subtitle">Ваш автомобиль будет в надежных руках</h3>
-        <button className="button i-button">ДИАГНОСТИКА</button>
+        <button className="button i-button">ЗАПИСАТЬСЯ</button>
       </div>
     </section>
 
     <section className="section-next">
-      <div className="hero-body">
-        <div className="container">
-          <h2 className="title is-1"></h2>
-        </div>
+      <div className="container">
+        <h2 className="title">Об автосервисе</h2>
       </div>
     </section>
 

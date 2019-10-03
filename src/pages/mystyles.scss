@@ -1,7 +1,4 @@
 .main-page {
-  //align-items: flex-start;
-
-  //min-height: 75vh; //calc(100vh - 6rem);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/car-repair-2.jpg");
   background-size: cover;
@@ -11,37 +8,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 50vh;
-  }
-  .title {
-    margin-bottom: 2rem;
-    letter-spacing: 0.1rem;
-    color: rgb(204, 199, 123);
-  }
-  .subtitle {
-    margin-bottom: 1.5rem;
-    color: rgb(230, 227, 193);
-  }
-  .i-button {
-    margin-top: 1.5rem;
-    font-size: 0.8em;
-    height: 35px;
-    width: 150px;
-    background-color: rgb(150, 0, 0);
-    color: rgb(184, 184, 184);
-    border: none;
-    &:hover {
-      background-color: rgb(199, 44, 23);
-      font-size: .9em;
-      color: #fff;
-    }
-  }
+}
+.service-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../images/bg-services-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section-next {
   height: 100vh;
+  background-color: rgb(87, 86, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50vh;
+}
+.title {
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+  color: rgb(204, 199, 123);
+}
+.subtitle {
+  margin-bottom: 1.5rem;
+  color: rgb(230, 227, 193);
+}
+.i-button {
+  margin-top: 1.5rem;
+  font-size: 0.8em;
+  height: 35px;
+  width: 150px;
+  background-color: rgb(150, 0, 0);
+  color: rgb(184, 184, 184);
+  border: none;
+  &:hover {
+    background-color: rgb(199, 44, 23);
+    font-size: 0.9em;
+    color: #fff;
+  }
 }
