@@ -7,9 +7,12 @@ import "./header.scss"
 const Header = ({ siteTitle }) => (
   <header>
     <nav>
-      <a href="" className="logo">
+      <Link to="/" className="logo">
+        {/* <a href="" className="logo"> */}
         <img src={logo} alt="klakson logo" />
-      </a>
+        {/* </a> */}
+      </Link>
+
       <ul className="menu">
         <li className="m-item">
           <Link className="link-menu" to="/">
