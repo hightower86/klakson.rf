@@ -14,7 +14,7 @@ const Services = () => {
           <h2 className="title">Ремонт ходовой части</h2>
         </div>
       </section>
-      <section className="section-next">
+      <section className="section-next is-light">
         <div className="container">
           <h2 className="title">Диагностика двигателя</h2>
         </div>
