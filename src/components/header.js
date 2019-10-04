@@ -11,6 +11,7 @@ const onBurgerClick = () => {
   //console.log(menu)
   const links = document.querySelectorAll(".menu li")
   console.log(links)
+  // Animate links
   links.forEach((link, index) => {
     if (link.style.animation) {
       link.style.animation = ""
@@ -18,6 +19,12 @@ const onBurgerClick = () => {
       link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5}s`
     }
     console.log(link)
+  })
+  // Animate burger
+  const lines = document.querySelectorAll(".line")
+  lines.forEach(line => {
+    line.classList.toggle("toggle")
+    console.log(line)
   })
 }
 
@@ -53,9 +60,9 @@ const Header = ({ siteTitle }) => (
         </li>
       </ul>
       <div className="burger" onClick={onBurgerClick}>
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
+        <div className="line line1"></div>
+        <div className="line line2"></div>
+        <div className="line line3"></div>
       </div>
     </nav>
   </header>

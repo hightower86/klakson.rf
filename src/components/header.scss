@@ -37,7 +37,7 @@ header {
 
         a {
           font-size: 0.9rem;
-          color: rgb(153, 153, 153);
+          color: rgb(215, 133, 77);
           text-decoration: none;
           padding: 6px 5px;
           letter-spacing: 0.1rem;
@@ -61,12 +61,13 @@ header {
       //align-items: center;
       div {
         //padding: auto;
+        transition: all 0.5s ease;
         width: 25px;
         height: 3px;
         margin: 5px;
-        background-color: rgb(190, 189, 189);
+        background-color: rgb(215, 133, 77);
         &:hover {
-          background-color: #fff;
+          //background-color: #fff;
         }
       }
     }
@@ -86,6 +87,10 @@ header {
       align-items: center;
       .burger {
         display: block;
+        // .line-1,
+        // .toggle {
+        //   background-color: red;
+        // }
       }
       .menu {
         //width: 50%;
@@ -119,5 +124,17 @@ header {
         transform: translateX(0%);
       }
     }
+  }
+}
+
+.burger {
+  .line1.toggle {
+    transform: rotate(135deg) translate(5px, -6px);
+  }
+  .line2.toggle {
+    opacity: 0;
+  }
+  .line3.toggle {
+    transform: rotate(-135deg) translate(5px, 6px);
   }
 }
