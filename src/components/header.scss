@@ -56,13 +56,14 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      cursor: pointer;
       //display: none;
       //align-items: center;
       div {
         //padding: auto;
         width: 25px;
         height: 3px;
-        margin: 4px;
+        margin: 5px;
         background-color: rgb(190, 189, 189);
         &:hover {
           background-color: #fff;
@@ -75,7 +76,7 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   // body {
   //   overflow-x: hidden;
   // }
@@ -87,6 +88,7 @@ header {
         display: block;
       }
       .menu {
+        //width: 50%;
         position: absolute;
         right: 0;
         height: 90vh;
@@ -95,8 +97,26 @@ header {
         display: flex;
         flex-direction: column;
 
-        //transform: translateX(100%);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        .m-item {
+          //opacity: 0;
+        }
+        //transform: translateX(0%);
         //justify-content: space-around;
+        @keyframes navLinkFade {
+          from {
+            opasity: 0;
+            transform: translateX(50px);
+          }
+          to {
+            opasity: 1;
+            transform: translateX(0px);
+          }
+        }
+      }
+      .menu-active {
+        transform: translateX(0%);
       }
     }
   }

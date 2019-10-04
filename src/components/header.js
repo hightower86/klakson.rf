@@ -4,6 +4,23 @@ import React from "react"
 import logo from "../images/logo-303x70.png"
 import "./header.scss"
 
+//const burger = document.querySelector(".burger")
+const onBurgerClick = () => {
+  const menu = document.querySelector(".menu")
+  menu.classList.toggle("menu-active")
+  //console.log(menu)
+  const links = document.querySelectorAll(".menu li")
+  console.log(links)
+  links.forEach((link, index) => {
+    if (link.style.animation) {
+      link.style.animation = ""
+    } else {
+      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5}s`
+    }
+    console.log(link)
+  })
+}
+
 const Header = ({ siteTitle }) => (
   <header>
     <nav>
@@ -35,7 +52,7 @@ const Header = ({ siteTitle }) => (
           </Link>
         </li>
       </ul>
-      <div className="burger">
+      <div className="burger" onClick={onBurgerClick}>
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="line3"></div>
