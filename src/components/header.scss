@@ -62,7 +62,7 @@ header {
         //padding: auto;
         width: 25px;
         height: 3px;
-        margin: 3px;
+        margin: 4px;
         background-color: rgb(190, 189, 189);
         &:hover {
           background-color: #fff;
@@ -76,23 +76,28 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  nav {
-    .menu {
-      position: absolute;
-      right: 0;
-      height: 90vh;
-      top: 60px;
-      background-color: #1a1919f1;
+  // body {
+  //   overflow-x: hidden;
+  // }
+  header {
+    nav {
       display: flex;
-      flex-direction: column;
-      //transform: translateX(100%);
-      //justify-content: space-around;
-    }
-    .burger {
-      display: block;
+      align-items: center;
+      .burger {
+        display: block;
+      }
+      .menu {
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        top: 60px;
+        background-color: #1a1919f1;
+        display: flex;
+        flex-direction: column;
+
+        //transform: translateX(100%);
+        //justify-content: space-around;
+      }
     }
   }
 }
