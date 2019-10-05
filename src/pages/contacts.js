@@ -9,8 +9,9 @@ const SecondPage = () => (
     <SEO title="Contacts" />
     <section className="contacts-page">
       <div className="container">
-        <h2>Запись на ремонт</h2>
-        <p>Позвоните нам по телефону</p>
+        <h2 className="title">Запись на ремонт (механики)</h2>
+        <h3 className="subtitle">тел. +7 922 444-47-60</h3>
+        <h3 className="subtitle">тел. +7 922 436-08-10</h3>
       </div>
     </section>
     <Link to="/">На главную страницу</Link>

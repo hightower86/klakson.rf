@@ -5,7 +5,11 @@ const Parts = () => {
   return (
     <Layout>
       <section className="parts-page">
-        <h2 className="title">Запчасти под заказ</h2>
+        <div className="container">
+          <h2 className="title">Запчасти</h2>
+          <h3 className="subtitle">тел. +7 922 777-72-90 </h3>
+          <h3 className="subtitle">тел. +7 932 248-20-44 </h3>
+        </div>
       </section>
     </Layout>
   )
